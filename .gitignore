@@ -1,0 +1,8 @@
+# Data files
+Phase1/data/*.csv
+Phase1/data/**/*.csv
+
+# Alternatively, ignore all CSV files in data directories
+**/data/*.csv
+**/data/**/*.csv
+
