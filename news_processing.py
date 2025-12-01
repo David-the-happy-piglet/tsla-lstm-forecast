@@ -2,11 +2,10 @@ import pandas as pd
 from transformers import pipeline
 from pathlib import Path
 
-# ==== Configuration: Modify according to your needs ====
-BASE_DIR = Path(__file__).resolve().parent  # Project root directory
 
-INPUT_CSV = BASE_DIR / "TSLA_news_multi_keyword_2020_2025.csv"  # Your original CSV filename
-OUTPUT_CSV = BASE_DIR / "news_output_with_score.csv"                 
+
+INPUT_CSV = "TSLA_news_multi_keyword_2020_2025.csv"  
+OUTPUT_CSV =  "news_output_with_score.csv"                 
 INPUT_COLUMNS = ["Title"]  # Column names to be used as model input
 NEW_COLUMN_NAME = "finbert_score"     # New column name for sentiment score
 NEW_COLUMN_NAME_CONFIDENCE = "score_confidence"
